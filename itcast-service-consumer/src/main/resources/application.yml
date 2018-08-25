@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: user-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
