@@ -1,0 +1,18 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: api-gateway
+#zuul:
+  #routes:
+    #user-service: #\u8FD9\u91CC\u662F\u8DEF\u7531id\uFF0C\u968F\u4FBF\u5199
+      #path: /user-service/** #\u8FD9\u91CC\u662F\u6620\u5C04\u8DEF\u5F84
+      #serviceId: user-service
+#zuul:
+  #prefix: /api # \u6DFB\u52A0\u8DEF\u7531\u524D\u7F00
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5 # \u83B7\u53D6\u670D\u52A1\u5217\u8868\u7684\u5468\u671F\uFF1A5s

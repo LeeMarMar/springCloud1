@@ -1,13 +1,13 @@
 server:
-  port: 10086 #\u7AEF\u53E3
+  port: 10087 #\u7AEF\u53E3
 spring:
   application:
     name: eureka-server #\u5E94\u7528\u540D\u79F0\uFF0C\u4F1A\u5728Eureka\u4E2D\u663E\u793A
 eureka:
   client:
-    register-with-eureka: false #\u662F\u5426\u6CE8\u518C\u81EA\u5DF1\u7684\u4FE1\u606F\u5230EurekaServer,\u9ED8\u8BA4\u4E3Atrue
-    fetch-registry: false #\u662F\u5426\u62C9\u53BB\u5176\u4ED6\u670D\u52A1\u7684\u4FE1\u606F\uFF0C\u9ED8\u8BA4\u4E3Atrue
+    register-with-eureka: true #\u662F\u5426\u6CE8\u518C\u81EA\u5DF1\u7684\u4FE1\u606F\u5230EurekaServer,\u9ED8\u8BA4\u4E3Atrue
+    fetch-registry: true #\u662F\u5426\u62C9\u53BB\u5176\u4ED6\u670D\u52A1\u7684\u4FE1\u606F\uFF0C\u9ED8\u8BA4\u4E3Atrue
     service-url:
-      defaultZone: http://127.0.0.1:${server.port}/eureka
+      defaultZone: http://127.0.0.1:10086/eureka
 
 
